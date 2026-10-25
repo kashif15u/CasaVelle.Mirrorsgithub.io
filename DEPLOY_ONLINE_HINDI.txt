@@ -1,0 +1,48 @@
+CASAVELLE WEBSITE — ONLINE DEPLOY GUIDE
+=======================================
+
+IMPORTANT
+Yeh website Express/Node.js backend use karti hai. Is ZIP ko sirf browser mein kholne se backend/login/admin nahi chalega. Aise hosting/server ki zaroorat hai jo Node.js applications support kare (jaise Render, Railway, VPS, ya cPanel Node.js App).
+
+OPTION A: RENDER PAR DEPLOY
+1. ZIP ko apne computer par Extract All karein.
+2. Extract hue CASAVELLE_Website folder ko apne GitHub repository mein upload karein.
+3. Render.com par account banayein aur New > Blueprint select karein.
+4. Apni GitHub repository connect karein; Render render.yaml detect karega.
+5. ADMIN_PASSWORD ke liye ek strong, unique password enter karein. Is password ko kisi se share na karein.
+6. Deploy complete hone ka intezar karein. Render aapko https://...onrender.com address dega.
+7. Public website us address par aur admin dashboard us address ke aage /admin.html par khulega.
+
+NOTE: render.yaml persistent disk ke liye paid/starter plan configure karta hai. Hosting provider ki current pricing/availability deployment se pehle check karein.
+
+OPTION B: CPANEL NODE.JS HOSTING
+1. ZIP extract karke files hosting ke Node.js app folder mein upload karein.
+2. Hosting panel mein Node.js version 20 ya compatible LTS select karein.
+3. Application root ko CASAVELLE_Website folder par set karein; startup file server.js.
+4. Environment variables set karein:
+   NODE_ENV=production
+   JWT_SECRET=<lambi random secret value>
+   ADMIN_EMAIL=<aapka admin email>
+   ADMIN_PASSWORD=<strong unique password>
+   WHATSAPP_PRIMARY=919389867765
+   WHATSAPP_SECONDARY=919690190316
+5. Hosting panel ke terminal se npm install chalayein.
+6. Application restart karein aur hosting provider ka HTTPS domain kholein.
+
+ADMIN
+Admin URL: https://YOUR-DOMAIN/admin.html
+Default admin email in example: admin@casavelle.in
+ADMIN_PASSWORD hosting environment mein aap khud set karein. Koi default password production mein use na karein.
+
+BEFORE REAL CUSTOMER LAUNCH
+- Sample products/prices/images ko actual inventory se replace karein.
+- Privacy/returns/shipping text ko apni real policy ke mutabiq review karein.
+- Order/user data ka backup aur secure database/persistent storage verify karein.
+- HTTPS on rakhein aur admin password strong rakhein.
+- Payment gateway is version mein configured nahi hai; orders/queries ko test karein.
+
+LOCAL TEST
+Node.js LTS install karein. Terminal mein folder khol kar:
+  npm install
+  npm start
+Phir browser mein http://localhost:3000 kholein.

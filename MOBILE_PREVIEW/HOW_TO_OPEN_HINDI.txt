@@ -1,0 +1,19 @@
+CASAVELLE — MOBILE FRIENDLY PREVIEW
+===================================
+
+YEH KYA HAI?
+MOBILE_PREVIEW folder website ka lightweight preview version hai. Isko dekhne ke liye Node.js install karna zaroori nahi.
+
+PHONE PAR KAISE DEKHEIN?
+1. ZIP ko phone par download karein.
+2. File Manager se ZIP extract karein.
+3. CASAVELLE_Website > MOBILE_PREVIEW folder kholein.
+4. index.html ko Chrome/browser mein open karne ki koshish karein.
+   Note: kuch Android file managers local HTML ko directly open nahi karte. Aise mein folder ko kisi static hosting par upload karke link kholna sabse aasaan rahega, ya computer par index.html double-click karein.
+
+IMPORTANT:
+- Yeh preview/catalog hai. Product search, category/price filter, details aur WhatsApp enquiry kaam karte hain.
+- Login, customer accounts, order database aur admin dashboard is preview mein kaam nahi karte.
+- Product photos illustrative placeholders hain; prices, sizes, stock aur delivery charge customer ko confirm karein.
+- Original full Node.js website aur admin/backend files is ZIP mein alag se maujood hain.
+- Public launch ke liye website ko hosting par publish karna hoga. Sirf ZIP share karne se sabke phone mein internet website nahi banegi.

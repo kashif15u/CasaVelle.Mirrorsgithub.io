@@ -1,0 +1,74 @@
+[
+  {
+    "id": "CV001",
+    "name": "Aura Round Mirror",
+    "category": "Round Mirrors",
+    "price": 1499,
+    "oldPrice": 1799,
+    "size": "24 inch",
+    "description": "A refined round mirror designed to bring softness and light to your space.",
+    "featured": true,
+    "active": true,
+    "image": "/assets/mirror-round.svg"
+  },
+  {
+    "id": "CV002",
+    "name": "Linea Square Mirror",
+    "category": "Square Mirrors",
+    "price": 1299,
+    "oldPrice": 1599,
+    "size": "24 × 24 inch",
+    "description": "Clean lines and a timeless silhouette for modern interiors.",
+    "featured": true,
+    "active": true,
+    "image": "/assets/mirror-square.svg"
+  },
+  {
+    "id": "CV003",
+    "name": "Forma Rectangle Mirror",
+    "category": "Rectangular Mirrors",
+    "price": 1799,
+    "oldPrice": 2199,
+    "size": "18 × 30 inch",
+    "description": "A versatile statement piece for bedrooms, hallways and living spaces.",
+    "featured": true,
+    "active": true,
+    "image": "/assets/mirror-rectangle.svg"
+  },
+  {
+    "id": "CV004",
+    "name": "Serene Basin Mirror",
+    "category": "Wash Basin Mirrors",
+    "price": 1599,
+    "oldPrice": 1899,
+    "size": "20 × 28 inch",
+    "description": "A polished everyday essential for a beautiful wash-basin area.",
+    "featured": false,
+    "active": true,
+    "image": "/assets/mirror-basin.svg"
+  },
+  {
+    "id": "CV005",
+    "name": "Élan Decorative Mirror",
+    "category": "Decorative Wall Mirrors",
+    "price": 2299,
+    "oldPrice": 2699,
+    "size": "Design-led",
+    "description": "Decorative styling made to elevate an entryway or feature wall.",
+    "featured": true,
+    "active": true,
+    "image": "/assets/mirror-decorative.svg"
+  },
+  {
+    "id": "CV006",
+    "name": "Minimal Round Mirror",
+    "category": "Round Mirrors",
+    "price": 999,
+    "oldPrice": 1199,
+    "size": "18 inch",
+    "description": "A compact, understated mirror for smaller corners and everyday use.",
+    "featured": false,
+    "active": true,
+    "image": "/assets/mirror-round.svg"
+  }
+]

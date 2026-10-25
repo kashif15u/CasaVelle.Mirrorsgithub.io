@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: casavelle-store
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: casavelle-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@casavelle.in
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: WHATSAPP_PRIMARY
+        value: "919389867765"
+      - key: WHATSAPP_SECONDARY
+        value: "919690190316"
